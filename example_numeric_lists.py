@@ -82,17 +82,26 @@ mean = statistics.mean(score_list)
 median = statistics.median(score_list)
 mode = statistics.mode(score_list)
 
+print(f'Mean: {round(mean, 2)}')
+print(f'Median: {round(median, 2)}')
+print(f'Mode: {round(mode, 2)}')
+
 # Descriptive: Measures of spread
 # Get standard deviation and variance for a values list
 
 stdev = statistics.stdev(score_list)
 variance = statistics.variance(score_list)
 
+print(f'Standard Deviation: {round(stdev, 2)}')
+print(f'Variance: {round(variance, 2)}')
+
 # Descriptive: Measures of correlation
 # Use two numerical lists of the same size
 # Use statisttics module to get correlation between list1 and list2
 
 correlationxy = statistics.correlation(xtimes_list, yvalues_list)
+
+print(f'Correlation: {round(correlationxy, 2)}')
 
 
 # Predictive: Machine Learning - Linear Regression
@@ -103,6 +112,8 @@ correlationxy = statistics.correlation(xtimes_list, yvalues_list)
 # Python functions can return multiple values
 
 slope, intercept = statistics.linear_regression(xtimes_list, yvalues_list)
+print(f'Slope: {round(slope, 2)}')
+print(f'Intercept: {round(intercept, 2)}')
 
 # Once we have learned the slope and intercept
 # of the best-fit straight line through the data,
@@ -113,11 +124,14 @@ slope, intercept = statistics.linear_regression(xtimes_list, yvalues_list)
 x_max = max(xtimes_list)
 newx = x_max * 1.5  # predict for a future x value
 
+print(f'New X: {newx}')
+
 # Use the slope and intercept to predict a y value for the future x value
 # y = mx + b
 
 newy = slope * newx + intercept
 
+print(f'New Y: {newy}')
 
 # BUILT-IN FUNCTIONS ......................................
 # Many built-in functions work on lists

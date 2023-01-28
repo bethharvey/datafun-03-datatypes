@@ -1,3 +1,10 @@
+## Beth Harvey
+01/25/2023
+Data Analysis Fundamentals Project 3
+Domain: Birds
+
+The purpose of this project is to use lists, tuples, and sets, as well as list comprehensions, and the filter and map functions.
+
 # datafun-03-datatypes
 
 > Practice with Python data types, filter(), map(), and list comprehensions

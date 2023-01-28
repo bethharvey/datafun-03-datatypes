@@ -40,10 +40,11 @@ with open("text_woodchuck.txt", "r") as fileObject:
 
 # Print the count and list of words
 word_ct = len(list_words)
+print(f'Word count: {word_ct}')
 
 # Print the count and list of unique words
 unique_word_ct = len(unique_words)
-
+print(f'Unique word count: {unique_word_ct}')
 
 # Create a random sentence
 # e.g. "The angry dog runs quickly."
@@ -73,6 +74,16 @@ def get_winner_message(userguess, botguess):
             return "I win!"
         else:
             return "You win!"
+    elif userguess == "paper":
+        if botguess == "scissors":
+            return "I win!"
+        else:
+            return "You win!"
+    elif userguess == "scissors":
+        if botguess == "rock":
+            return "You win!"
+        else:
+            return "I win!"
 
 
 ready_for_continous_game = False  # change this when ready
@@ -101,4 +112,3 @@ while True:
     print("This program will run forever unless you type q to quit.")
     print("or use Ctrl-C to stop the program.")
     print()
-
